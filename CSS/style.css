@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("../images/LETTRIX.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+nav {
+    background-color: #3498db;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.menu-links a {
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 0 30px;
+    text-decoration: none;
+}
+.menu-links a:hover {
+    text-decoration: none;
+}
+.session-info {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+}
+section {
+    padding: 80px 20px;
+    min-height: 100vh;
+}
+#accueil {
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    display: flex; /* Utilisation de Flexbox */
+    flex-direction: column; /* Organise les éléments (texte et bouton) en colonne */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+}
+
+#accueil h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#accueil p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+#accueil button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#accueil button:hover {
+    background-color: #2980b9;
+}
+#decouvrir {
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    display: flex; /* Utilisation de Flexbox */
+    flex-direction: column; /* Organise les éléments (texte et bouton) en colonne */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+}
+#decouvrir button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#seconnecter {
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    display: flex; /* Utilisation de Flexbox */
+    flex-direction: column; /* Organise les éléments (texte et bouton) en colonne */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+}
+#seconnecter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#seconnecter input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+#seconnecter button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#jeu {
+    color: white;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 600px;
+}
+#jeu button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#paramètresJeu
+{
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    display: flex; /* Utilisation de Flexbox */
+    flex-direction: column; /* Organise les éléments (texte et bouton) en colonne */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+}
+#paramètresJeu h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#paramètresJeu label {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#paramètresJeu select {
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+#paramètresJeu select:hover {
+    background-color: #dfe6e9;
+}
+#validerBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#validerBtn:hover {
+    background-color: #2980b9;
+}
+
+/* Page lancerJeu */
+.grille {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.case-input {
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+    text-align: center;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    background-color: white;
+    color: #2c3e50;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.zone-jeu {
+    display: flex;
+    align-items: flex-start; /* Aligne le haut des éléments */
+    gap: 20px; /* Espace entre la grille et le bouton */
+    margin: 30px auto;
+    justify-content: center;
+}
+
+.btn-valider {
+    padding: 30px 20px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: fit-content; /* Pour qu’il s’adapte au contenu */
+    margin-top: 45px;
+}
+
+.green { background-color: green; }
+.yellow { background-color: yellow; }
+.red { background-color: red; }

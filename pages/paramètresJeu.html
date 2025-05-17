@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lettrix - Le Jeu de Mots Intéressant</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script type="module" src="../JS/script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="menu-links">
+            <a href="../index.html">Accueil</a>
+            <a href="./decouvrir.html">Découvrir</a>
+            <a href="./jeu.html">Jouer</a>
+        </div>
+    </nav>
+    <element id="paramètresJeu">
+        <h2>Paramètres du Jeu</h2>
+        <label for="niveau">Choisissez une option :</label>
+        <select id="niveau" name="niveau">
+            <option value="fac">Facile</option>
+            <option value="moy">Moyen</option>
+            <option value="diff">Difficile</option>
+        </select>
+        <button id="validerBtn" onclick="window.location.href='lancerJeu.html'">Valider</button>
+    </element>
+</body>
+</html>
