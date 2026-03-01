@@ -8,17 +8,11 @@
     <script type="module" src="./JS/script.js" defer></script>
 </head>
 <body>
-    <nav>
-        <div class="menu-links">
-            <a href="index.html">Accueil</a>
-            <a href="./pages/decouvrir.html">Découvrir</a>
-            <a href="./pages/jeu.html">Jouer</a>
-        </div>
-    </nav>
+    <?php require_once "./includes/menu.php"; ?>
     <element id="accueil">
         <h1>Bienvenue sur Lettrix !</h1>
         <p>Le jeu de mots qui met votre logique à l'épreuve. Découvrez et testez vos compétences avec Lettrix.</p>
-        <button onclick="window.location.href='./pages/parametresJeu.html'">Jouer</button>
+        <button onclick="window.location.href='pages/parametresJeu.php'">Jouer</button>
     </element>
 </body>
 </html>

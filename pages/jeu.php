@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lettrix - Le Jeu de Mots Intéressant</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script type="module" src="../JS/script.js" defer></script>
+</head>
+<body>
+
+    <?php require_once "../includes/menu.php"; ?>
+
+    <main id="jeu">
+        <h1>Règles du jeu</h1>
+
+        <p>Le joueur doit deviner un mot. Pour cela :</p>
+        <ul>
+            <li>Il a droit à 6 tentatives.</li>
+            <li>Il connaît dès le départ la longueur du mot.</li>
+        </ul>
+
+        <p>À chaque tentative, le jeu indique quelles lettres :</p>
+        <ul>
+            <li>sont bonnes : carré vert.</li>
+            <li>sont mal placées : carré jaune.</li>
+            <li>sont fausses : carré rouge.</li>
+        </ul>
+       
+        <button onclick="window.location.href='parametresJeu.php'">
+            Tenter ma chance
+        </button>
+    </main>
+
+</body>
+</html>

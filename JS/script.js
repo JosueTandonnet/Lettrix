@@ -53,14 +53,16 @@ function creerNouvelleLigne() {
     grille.appendChild(ligne);
 }
 
+function startGame(modeJeu) {
+    const liste = dictionary_list[modeJeu];
+    console.log(modeJeu);
 
-function startGame() {
-    const indW = Math.floor(Math.random() * dictionary_list.length);
-    randomW = dictionary_list[indW].toUpperCase();
+    const indW = Math.floor(Math.random() * liste.length);
+    randomW = liste[indW];
+
     wordLength = randomW.length;
 
-    creerNouvelleLigne(); // créer la première ligne du jeu
-    console.log(randomW);
+    creerNouvelleLigne();
 }
 
 function verifierMot(motE, motA) {
@@ -147,6 +149,14 @@ function validerMot() {
     }
 }
 
+const btn = document.getElementById("validerBtn");
+if (btn) {
+    btn.addEventListener("click", function () {
+        const modeJeu = document.getElementById("niveau").value;
+        window.location.href = "lancerJeu.php?mode=" + modeJeu;
+    });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-    startGame();
+    startGame(modeJeu);
 });

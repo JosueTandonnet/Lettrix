@@ -7,19 +7,14 @@
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
-    <nav>
-        <div class="menu-links">
-            <a href="../index.html">Accueil</a>
-            <a href="./decouvrir.html">Découvrir</a>
-            <a href="./jeu.html">Jouer</a>
-        </div>
-    </nav>
-    <element id="decouvrir">
+    <?php require_once "../includes/menu.php"; ?>
+    <main id="decouvrir">
         <h1>Découvrir Lettrix</h1>
         <p>Lettrix est un jeu captivant où vous devez deviner des mots à partir d'indices. Le but ? Trouver le mot correct en un minimum de tentatives tout en maîtrisant votre logique et vos connaissances en vocabulaire. Testez-le dès aujourd'hui et défiez vos amis !</p>
-        <br> <!-- Saut de ligne -->
+        
         <p> Pour en savoir plus sur les règles de Lettrix, cliquez ici :</p>
-        <button onclick="window.location.href='jeu.html'">Découvrir les règles</button>
-    </element>
+        <br>
+        <button onclick="window.location.href='jeu.php'">Découvrir les règles</button>
+    </main>
 </body>
 </html>
