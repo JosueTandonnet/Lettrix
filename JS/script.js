@@ -5,6 +5,11 @@ let randomW = "";
 let wordLength = 0;
 let motEntre = "";
 
+function getModeFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("mode") || "facile"; // mode par défaut
+}
+
 function creerNouvelleLigne() {
     const grille = document.getElementById("grille");
     const ligne = document.createElement("div");
@@ -158,5 +163,6 @@ if (btn) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    const modeJeu = getModeFromURL();
     startGame(modeJeu);
 });
