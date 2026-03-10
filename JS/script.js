@@ -153,7 +153,7 @@ const btn = document.getElementById("validerBtn");
 if (btn) {
     btn.addEventListener("click", function () {
         const modeJeu = document.getElementById("niveau").value;
-        window.location.href = "lancerJeu.php?mode=" + modeJeu;
+        window.location.href = "lancerJeu.html?mode=" + modeJeu;
     });
 }
 

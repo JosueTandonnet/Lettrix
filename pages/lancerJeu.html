@@ -1,4 +1,4 @@
-<?php
+<?html
 $mode = strtolower($_GET['mode'] ?? 'facile');
 ?>
 
@@ -11,13 +11,19 @@ $mode = strtolower($_GET['mode'] ?? 'facile');
     <link rel="stylesheet" href="../CSS/style.css">
 
     <script>
-        const modeJeu = "<?php echo $mode; ?>";
+        const modeJeu = "<?html echo $mode; ?>";
     </script>
 
     <script type="module" src="../JS/script.js" defer></script>
 </head>
 <body>
-    <?php require_once "../includes/menu.php"; ?>
+    <nav>
+    <div class="menu-links">
+        <a href="/index.html">Accueil</a>
+        <a href="/pages/decouvrir.html">Découvrir</a>
+        <a href="/pages/jeu.html">Jouer</a>
+    </div>
+    </nav>
     <div class="zone-jeu">
         <div class="grille" id="grille">
             <!-- Les lignes du jeu et leurs boutons correspondants seront générées ici -->

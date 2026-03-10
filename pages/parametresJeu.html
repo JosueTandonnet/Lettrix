@@ -8,7 +8,13 @@
     <script type="module" src="../JS/script.js" defer></script>
 </head>
 <body>
-    <?php require_once "../includes/menu.php"; ?>
+    <nav>
+    <div class="menu-links">
+        <a href="/index.html">Accueil</a>
+        <a href="/pages/decouvrir.html">Découvrir</a>
+        <a href="/pages/jeu.html">Jouer</a>
+    </div>
+    </nav>
     <main id="paramètresJeu">
         <h2>Paramètres du Jeu</h2>
         <label for="niveau">Choisissez une option :</label>
@@ -17,7 +23,7 @@
             <option value="moyen">Moyen</option>
             <option value="difficile">Difficile</option>
         </select>
-        <button id="validerBtn" onclick="window.location.href='lancerJeu.php'">Valider</button>
+        <button id="validerBtn" onclick="window.location.href='lancerJeu.html'">Valider</button>
     </main>
 </body>
 </html>
